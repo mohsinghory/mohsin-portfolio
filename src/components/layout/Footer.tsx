@@ -72,19 +72,19 @@ export function Footer() {
             <ul className="space-y-2">
               <li className="text-foreground/70">
                 <span className="block">Email:</span>
-                <a href="mailto:contact@mohsinghory.com" className="hover:text-primary transition-colors">
-                  contact@mohsinghory.com
+                <a href="mailto:mohsinghory1234@gmail.com" className="hover:text-primary transition-colors">
+                  mohsinghory1234@gmail.com
                 </a>
               </li>
               <li className="text-foreground/70">
                 <span className="block">Phone:</span>
-                <a href="tel:+11234567890" className="hover:text-primary transition-colors">
-                  +1 (123) 456-7890
+                <a href="tel:+918279664802" className="hover:text-primary transition-colors">
+                  8279664802
                 </a>
               </li>
               <li className="text-foreground/70">
                 <span className="block">Location:</span>
-                <span>Remote - Available Worldwide</span>
+                <span>lig 755 sector 4 Agra</span>
               </li>
             </ul>
           </div>
