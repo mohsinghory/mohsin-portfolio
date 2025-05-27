@@ -26,15 +26,15 @@ export function Footer() {
               crafting innovative digital solutions for diverse industries.
             </p>
             <div className="flex gap-4">
-              {["github", "linkedin", "twitter", "dribbble"].map((social) => (
+              {[{ name: 'linkedin', url: 'https://www.linkedin.com/in/mohsin-ghory-1b1b1b1b1/' }, { name: 'twitter', url: 'https://twitter.com/mohsinghory' }, { name: 'dribbble', url: 'https://dribbble.com/mohsinghory' }].map((social) => (
                 <a
-                  key={social}
-                  href={`https://${social}.com/mohsinghory`}
+                  key={social.name}
+                  href={social.url}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 rounded-full bg-card border border-border hover:border-primary hover:text-primary flex items-center justify-center transition-colors"
                 >
-                  <span className="sr-only">{social}</span>
+                  <span className="sr-only">{social.name}</span>
                   <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path fillRule="evenodd" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" clipRule="evenodd" />
                   </svg>
