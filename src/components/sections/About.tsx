@@ -33,7 +33,7 @@ export function About() {
             <div className="relative w-80 h-80 mb-8 mx-auto md:mx-0">
               <div className="absolute inset-0 rounded-2xl overflow-hidden futuristic-border">
                 <Image
-                  src={require("d:/my files/my photos/PicsArt_1462088573286.jpg")}
+                  src="/images/PicsArt_1462088573286.jpg"
                   alt="Mohsin Ghory"
                   fill
                   className="object-cover"

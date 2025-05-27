@@ -41,9 +41,12 @@ export function Header() {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold gradient-text">
-          Mohsin Ghory
-        </Link>
+        <div className="flex items-center gap-3">
+          <img src="/images/logo.png" alt="Logo" className="h-8 w-8 object-contain" />
+          <Link href="/" className="text-2xl font-bold gradient-text">
+            Mohsin Ghory
+          </Link>
+        </div>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
