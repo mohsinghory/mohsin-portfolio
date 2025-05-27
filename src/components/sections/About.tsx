@@ -32,10 +32,13 @@ export function About() {
           <div className="flex flex-col items-center md:items-start">
             <div className="relative w-80 h-80 mb-8 mx-auto md:mx-0">
               <div className="absolute inset-0 rounded-2xl overflow-hidden futuristic-border">
-                {/* Replace with your actual profile image */}
-                <div className="w-full h-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center">
-                  <User size={120} className="text-foreground/30" />
-                </div>
+                <Image
+                  src={require("d:/my files/my photos/PicsArt_1462088573286.jpg")}
+                  alt="Mohsin Ghory"
+                  fill
+                  className="object-cover"
+                  priority
+                />
               </div>
             </div>
 

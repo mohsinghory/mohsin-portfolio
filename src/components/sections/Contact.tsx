@@ -81,7 +81,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Email</h4>
-                    <p className="text-foreground/70 mt-1">contact@mohsinghory.com</p>
+                    <p className="text-foreground/70 mt-1">mohsinghory1234@gmail.com</p>
                   </div>
                 </div>
 
@@ -91,7 +91,7 @@ export function Contact() {
                   </div>
                   <div>
                     <h4 className="font-semibold">Phone</h4>
-                    <p className="text-foreground/70 mt-1">+1 (123) 456-7890</p>
+                    <p className="text-foreground/70 mt-1">+91 8279664802</p>
                   </div>
                 </div>
 
@@ -134,6 +134,7 @@ export function Contact() {
               <h3 className="text-2xl font-bold mb-6">Send Me a Message</h3>
 
               <Form {...form}>
+                {/* Move the form tag outside of Form for correct event handling */}
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                   <div className="grid sm:grid-cols-2 gap-6">
                     <div className="space-y-2">
