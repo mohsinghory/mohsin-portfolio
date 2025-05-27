@@ -1,5 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  experimental: {
+    appDir: true, // ← Add this line to enable the App Router
+  },
   images: {
     unoptimized: true,
     domains: [
