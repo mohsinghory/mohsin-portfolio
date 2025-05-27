@@ -29,34 +29,40 @@ const projects: ProjectProps[] = [
     title: "AI-Powered E-commerce Platform",
     description: "A full-stack e-commerce solution with personalized product recommendations using machine learning algorithms. Built with React, Node.js, MongoDB, and TensorFlow.",
     tags: ["MERN", "TensorFlow", "Redux", "Stripe"],
+    image: "/images/Benefits-of-Integrating-AI-Solutions-in-eCommerce.webp",
     featured: true,
   },
   {
     title: "Smart Financial Dashboard",
     description: "Interactive dashboard for financial analytics with predictive insights. Features real-time data visualization and machine learning forecasting models.",
     tags: ["React", "Python", "D3.js", "Scikit-learn"],
+    image: "/images/seo-hero-financial-dashboards_ttulhs.png",
     featured: true,
   },
   {
     title: "Healthcare Appointment System",
     description: "A comprehensive healthcare platform that streamlines patient appointments and medical records management with secure authentication.",
     tags: ["Next.js", "Express", "MongoDB", "JWT"],
+    image: "/images/Medical-Appointment-Scheduling-Software.png",
   },
   {
     title: "Natural Language Processing Tool",
     description: "Advanced NLP application that analyzes sentiment, extracts entities, and summarizes large text documents using deep learning techniques.",
     tags: ["Python", "PyTorch", "FastAPI", "React"],
+    image: "/images/233-scaled.jpg",
     featured: true,
   },
   {
     title: "Real-time Collaboration Platform",
     description: "A collaborative workspace with real-time document editing, chat, and project management features built with WebSocket technology.",
     tags: ["MERN", "Socket.io", "Redis", "AWS"],
+    image: "/images/67d0731a50881146d37ac482_Real-Time Collaboration Tools for Design Teams.png",
   },
   {
     title: "Computer Vision Image Analyzer",
     description: "Web application that applies computer vision algorithms to analyze and process images, including object detection and image classification.",
     tags: ["Python", "TensorFlow", "OpenCV", "Flask"],
+    image: "/images/e-Diagram-of-computer-vision-system-and-image-analysis-methodology.png",
   },
 ];
 
@@ -73,7 +79,13 @@ const ProjectCard: React.FC<ProjectProps> = ({
     <Card className={`overflow-hidden transition-all duration-300 hover:shadow-xl hover:-translate-y-2 ${
       featured ? "border-primary/30" : ""
     }`}>
-      <ProjectImage />
+      {image ? (
+        <div className="relative w-full h-48">
+          <Image src={image} alt={title} fill className="object-cover" />
+        </div>
+      ) : (
+        <ProjectImage />
+      )}
       <CardContent className="p-6">
         <div className="flex justify-between items-start mb-3">
           <h3 className="text-xl font-bold">{title}</h3>
